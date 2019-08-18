@@ -83,9 +83,7 @@ let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
      static byPrice() {
       return store.meals.sort((a, b) => a.price < b.price);
-      expect(Meal.byPrice()[0]).to.equal(turducken);
-      expect(Meal.byPrice()[1]).to.equal(fancyPizza);
-       expect(Meal.byPrice()[2]).to.equal(lobster);
+      
     }
   };
 })
